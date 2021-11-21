@@ -33,7 +33,7 @@
 .cart_container {
   /* background: blueviolet; */
   display: flex;
-  width: 20%;
+  width: 30%;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -52,11 +52,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 15%;
   height: 55px;
   border-radius: 10px;
   border: none;
 }
 .cart_icon {
   color: #fff !important;
+}
+
+.signup_btn {
+  background: #ff9901 !important;
+  color: #fff !important;
+  width: 100px !important;
+  font-weight: 700 !important;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    /* background: #fff; */
+  }
+
+  .header__container {
+    background: blue;
+  }
+
+  .cart_container {
+    background: blueviolet;
+  }
 }

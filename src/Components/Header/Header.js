@@ -2,6 +2,7 @@ import React from "react";
 import "../Header/Header.css";
 import logo from "../../assests/amazonlogo.png";
 import Search from "../Search/Search";
+import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Header = () => {
@@ -22,6 +23,7 @@ const Header = () => {
         {/* cart */}
 
         <div className="cart_container">
+          <Button className="signup_btn">Sign Up</Button>
           <div className="order">
             <p>
               Returns <strong>&amp; Orders</strong>
