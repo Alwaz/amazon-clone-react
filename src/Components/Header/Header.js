@@ -3,24 +3,19 @@ import "../Header/Header.css";
 import logo from "../../assests/amazonlogo.png";
 import Search from "../Search/Search";
 import Button from "@mui/material/Button";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="header__container">
-          {/* logo */}
-          <div className="header__logo">
-            <img src={logo} alt="amazon logo" />
-          </div>
-
-          {/* search bar */}
-          <Search />
+        <div className="header__logo">
+          <img src={logo} alt="amazon logo" />
         </div>
 
-        {/* orders */}
-        {/* cart */}
+        <div className="header__search__container">
+          <Search />
+        </div>
 
         <div className="cart_container">
           <Button className="signup_btn">Sign Up</Button>
@@ -31,7 +26,7 @@ const Header = () => {
           </div>
 
           <div className="cart">
-            <ShoppingCartIcon className="cart_icon" />
+            <ShoppingCartOutlinedIcon className="cart_icon" />
           </div>
         </div>
       </header>
