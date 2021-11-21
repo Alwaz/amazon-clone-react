@@ -48,7 +48,8 @@
 }
 
 .cart {
-  background: #ff9901;
+  background: #ffa51d;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,15 +58,25 @@
   border-radius: 10px;
   border: none;
 }
+
+.cart:hover {
+  background: #ff9901;
+}
 .cart_icon {
-  color: #fff !important;
+  color: #131921 !important;
 }
 
 .signup_btn {
-  background: #ff9901 !important;
+  background: #ffa51d !important;
+
   color: #fff !important;
-  width: 100px !important;
+  width: 120px !important;
   font-weight: 700 !important;
+  border-radius: 5px !important;
+}
+
+.signup_btn:hover {
+  background: #ff9901 !important;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
